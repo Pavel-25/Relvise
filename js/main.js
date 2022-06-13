@@ -68,7 +68,7 @@ if(menuLinks.length > 0) {
     
 }
 
-//анимация title
+//анимация текста
 
 const animItems = document.querySelectorAll('._anim-items');  //класс для тайтла
 if(animItems.length > 0) {
@@ -168,7 +168,7 @@ $(window).scroll(function() {
       $(this).prop('Counter', -1).animate({
         Counter: $(this).text()
       },{
-        duration: 2500, 
+        duration: 3500, 
         easing: 'swing',
         step: function(now) {
           $(this).text(Math.ceil(now));
@@ -193,13 +193,3 @@ function showStartModal() {
 		})
 	}, 12000);
 }
-
-$('.menu__link[data-goto], .menu__sub-link[data-goto]').on('click',
-      function(){
-        var scroll_el = $(this).attr('href');
-          if ($(scroll_el).length != 0) {
-            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 93},5000);
-          }
-          return false;
-      }
-    );

@@ -18,7 +18,7 @@ $colorButton:#FF7B47;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
-*{padding: 0px;margin: 0px;border: 0px;}
+*{padding: 0px;margin: 0px;border: 0px; scroll-behavior: smooth;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
@@ -170,6 +170,7 @@ main{
 		color: $colorText;
 		&:hover{
 			text-decoration: underline;
+			color: $colorText;
 		}
 	}
 
@@ -185,6 +186,7 @@ main{
 		
 		&:hover{
 			text-decoration: underline;
+			color: $colorText;
 		}
 	}
 	&__arrow {
