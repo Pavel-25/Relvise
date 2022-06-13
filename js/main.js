@@ -191,5 +191,5 @@ function showStartModal() {
 		$('#modal-yes-btn').on('click', function(){
 			$('#modal1').modal('hide');
 		})
-	}, 10000);
+	}, 12000);
 }
