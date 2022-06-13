@@ -193,18 +193,13 @@ function showStartModal() {
 		})
 	}, 12000);
 }
+ //медленная прокрутка для ссылок ИОС
 
 $(document).ready(function() {
 	$('a[href^="#"]').click(function() {
 		var target = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(target).offset().top
-		}, 500);
-	});
-	$('a[data-goto^=""]').click(function() {
-		var target = $(this).attr('data-goto');
-		$('html, body').animate({
-			scrollTop: $(target).offset().top
-		}, 500);
+		}, 500)
 	});
 });
