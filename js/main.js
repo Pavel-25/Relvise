@@ -193,3 +193,13 @@ function showStartModal() {
 		})
 	}, 12000);
 }
+
+$('.menu__link[data-goto], .menu__sub-link[data-goto]').on('click',
+      function(){
+        var scroll_el = $(this).attr('href');
+          if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 93},5000);
+          }
+          return false;
+      }
+    );
