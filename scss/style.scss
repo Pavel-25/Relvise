@@ -1270,6 +1270,7 @@ body._touch{
 		color: #fff;
 		&:hover{
 			text-decoration: underline;
+			color: $colorButton;
 		}
 	}
 }
@@ -1282,6 +1283,10 @@ body._touch{
 		font-size: 14px;
 		line-height: 1.71;
 		padding:0 0 10px 34px;
+		&:hover{
+			text-decoration: underline;
+			color: $colorButton;
+		}
 		&_phone {
 			background: url("../Img/footer/phone.svg") 0 0 no-repeat;
 		}
@@ -1316,6 +1321,12 @@ body._touch{
 .social {
 
 	&__link {
+		img{
+			&:hover{
+				transition: all 1s ease 0s;
+				transform: rotate(-360deg);
+		}
+		}
 		&:not(:last-child){
 			margin-right: 20px;
 		}

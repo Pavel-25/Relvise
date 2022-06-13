@@ -1389,6 +1389,7 @@ body._touch .menu__list li._active .menu__arrow {
 
 .menu__footer-link:hover {
   text-decoration: underline;
+  color: #FF7B47;
 }
 
 .contacts-footer__item {
@@ -1400,6 +1401,11 @@ body._touch .menu__list li._active .menu__arrow {
   font-size: 14px;
   line-height: 1.71;
   padding: 0 0 10px 34px;
+}
+
+.contacts-footer__item:hover {
+  text-decoration: underline;
+  color: #FF7B47;
 }
 
 .contacts-footer__item_phone {
@@ -1429,6 +1435,13 @@ body._touch .menu__list li._active .menu__arrow {
 
 .footer__bottom-social {
   padding: 0 40px;
+}
+
+.social__link img:hover {
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .social__link:not(:last-child) {
