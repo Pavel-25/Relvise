@@ -1492,6 +1492,7 @@ body._touch .menu__list li._active .menu__arrow {
   }
   .footer__bottom-text {
     margin: 10px 0;
+    text-align: center;
   }
   .footer__bottom-social {
     margin: 10px 0;
